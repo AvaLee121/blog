@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
-import Button from 'src/components/Button/Button.jsx';
+import Button from '../../components/Button/Button';
 
 const Contact = () => {
   return (
@@ -27,7 +27,7 @@ const Contact = () => {
             cols={30} 
             rows={10}>
           </textarea>
-          <Button url="#" text="Send">Submit</Button> 
+         <Button url="#" text="Submit"/>
           
         </form>
       </div>

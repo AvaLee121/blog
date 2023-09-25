@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './page.module.css';
 import Image from 'next/image';
-import Button from 'src/components/Button/Button.jsx';
+import Button from '../../components/Button/Button';
 
 const About = () => {
   return (
@@ -30,9 +30,10 @@ const About = () => {
         <div className={styles.item}> 
           <h1 className={styles.title}>What we do?</h1>
           <p className={styles.desc}>ethwtrh</p>
-          <Button url='contact' text='Contact'/>
         </div>
       </div>
+      <br />
+      <Button url="/contact" text="Contact"/>
     </div>
     
   )
