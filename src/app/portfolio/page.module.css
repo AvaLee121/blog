@@ -1,7 +1,7 @@
 
 
 .mainTitle{
-    font-size: 100px;
+    font-size: 72px;
 
 }
 
@@ -29,11 +29,11 @@
 
 }
 .item:nth-child(2){
-    background: url("/websites.png");
+    background: url("/websites.jpg");
 
 }
 .item:nth-child(3){
-    background: url("/apps.png");
+    background: url("/apps.jpg");
 
 }
 

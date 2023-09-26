@@ -13,7 +13,7 @@
 
 .image{
     object-fit: contain;
-    animation: move 3s infinite ease alternate;
+    /* animation: move 3s infinite ease alternate; */
 }
 
 @keyframes move {
@@ -29,7 +29,6 @@
 .imgContainer{
     flex: 1;
     height: 500px;
-    width: auto;
     position: relative;
 }
 
@@ -40,13 +39,13 @@
     gap: 15px;
 }
 
-.input .textArea {
-    padding: 20px;
+.input, .textArea {
+    padding: 10px;
     background-attachment: transparent;
     border: none;
     outline: none;
     color: #bbb;
     border: 3px solid #bbb;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
+    
 }

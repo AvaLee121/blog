@@ -28,7 +28,6 @@ const Contact = () => {
             rows={10}>
           </textarea>
          <Button url="#" text="Submit"/>
-          
         </form>
       </div>
     </div>
