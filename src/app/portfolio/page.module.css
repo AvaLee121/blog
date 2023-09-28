@@ -37,10 +37,6 @@
 
 }
 
-.item:hover .title {
-    color: #53c28b;
-}
-
 .title{
     position: absolute;
     right: 10px;
