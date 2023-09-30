@@ -1,7 +1,7 @@
 Nest.js - Blog App 
 
-Youtube: https://www.youtube.com/watch?v=VE8BkImUciY&t=5794s
+Live view: https://blog-app-lyart-nine.vercel.app/
 
-Live view: 
+Reference Tutorial: https://github.com/safak/nextjs-tutorial
 
 
