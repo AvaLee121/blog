@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       
       <div className={styles.item}>
-      <Image src="/hero.png" width={500} height={500} alt="" className={styles.img}/>
+      <Image src="https://images.pexels.com/photos/392018/pexels-photo-392018.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" width={500} height={500} alt="" className={styles.img}/>
       </div>
 
     </div>

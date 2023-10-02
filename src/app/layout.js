@@ -7,7 +7,7 @@ import { ThemeProvider }from '../context/ThemeContext'
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-    title: "Ava Lee",
+    title: "ZimuLi",
     description: "This is the description",
     icon: 'favicon.ico'
 };

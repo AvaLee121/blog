@@ -40,7 +40,7 @@ const links = [
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <Link href="/" className={styles.logo}>Ava</Link>
+      <Link href="/" className={styles.logo}>Zimu</Link>
       <div className={styles.links}>
         <DarkModeToggle />
         {links.map( (link) =>(
