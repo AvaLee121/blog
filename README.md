@@ -1,4 +1,4 @@
-Nest.js - Blog App 
+Nest.js - Full Stack Website 
 
 Live view: https://blog-app-lyart-nine.vercel.app/
 
