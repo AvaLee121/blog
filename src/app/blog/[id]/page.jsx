@@ -3,17 +3,17 @@ import styles from "./page.module.css";
 import Image from "next/image";
 
 async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/posts/${id}`)
-  // The return value is *not* serialized
-  // You can return Date, Map, Set, etc.
- 
+  const res = await fetch(`http://localhost:3000/api/posts/${id}`, {
+    cache: "no-store"
+  });
+
   if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error('Failed to fetch data')
+    return notFound()
   }
- 
-  return res.json()
+
+  return res.json();
 }
+
 
 const BlogPost = async ({params}) => {
 
@@ -24,10 +24,7 @@ const BlogPost = async ({params}) => {
         <div className={styles.info}>
           <h1 className={styles.title}>{data.title}</h1>
           <p className={styles.desc}>
-          qhtthshaethrajyjtsjukykfkrukyukthqhtthshaethraj
-          yjtsjukykfkrukyukhtthshaethrajyjtsjukykfkrukyukth
-          qhtthshaethrajyjtsjukykfkrukyukthqhtthshaeth
-          rajyjtsjukykfk
+          {data.desc}
           </p>
           <div className={styles.author}>
             <Image
@@ -37,7 +34,7 @@ const BlogPost = async ({params}) => {
               height={40}
               className={styles.avatar}
             />
-            <span className={styles.username}>wethtrwth</span>
+            <span className={styles.username}>{data.username}</span>
           </div>
         </div>
         <div className={styles.imageContainer}>
@@ -52,13 +49,7 @@ const BlogPost = async ({params}) => {
       </div>
       <div className={styles.content}>
         <p className={styles.text}>
-        qhtthshaethrajyjtsjukykfkrukyukt
-        hqhtthshaethrajyjtsjukykfkrukyukthqhtth
-        shaethrajyjtsjukykfkrukyukthqhtthshaeth
-        rajyjtsjukykfkrukyuk
-        qhtthshaethrajyjtsjukykfkrukyukthqhtthshae
-        thrajyjtsjukykfkrukyukthqhtthshaethrajyjtsj
-        ukykfkrukyukthqht
+        {data.content}
         </p>
       </div>
     </div>
