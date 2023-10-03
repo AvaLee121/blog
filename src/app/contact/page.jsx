@@ -3,6 +3,12 @@ import styles from './page.module.css';
 import Image from 'next/image';
 import Button from '../../components/Button/Button';
 
+export const metadata = {
+  title: "Zimu Li Contact",
+  description: "This is contact page",
+ 
+};
+
 const Contact = () => {
   return (
     <div className={styles.container}>
@@ -12,7 +18,7 @@ const Contact = () => {
       <div className={styles.content}>
         <div className={styles.imgContainer}>
           <Image 
-            src='https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+            src=''
             alt=''
             fill={true}
             className={styles.image}

@@ -5,6 +5,9 @@ import Footer from "../components/footer/Footer"
 import "./globals.css";
 import { ThemeProvider }from '../context/ThemeContext'
 const inter = Inter({ subsets: ['latin'] });
+import mongoose from "mongoose";
+
+mongoose.set('strictQuery', true);
 
 export const metadata = {
     title: "ZimuLi",
