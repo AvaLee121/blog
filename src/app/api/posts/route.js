@@ -8,14 +8,18 @@ export const GET = async (request) => {
   const username = url.searchParams.get("username");
 
  
-
   try {
     await connect();
-
     const posts = await Post.find(username && { username });
-
+  
+    if (!posts) {
+      return new NextResponse("No posts found", { status: 404 });
+    }
+  
     return new NextResponse(JSON.stringify(posts), { status: 200 });
   } catch (err) {
+    console.error("Database query error:", err);
     return new NextResponse("Database Error", { status: 500 });
   }
+  
 };

@@ -1,5 +1,7 @@
 import mongoose from "mongoose";
 
+mongoose.set('strictQuery', true);
+
 const connect = async () => {
   try {
     const connection = await mongoose.connect(process.env.MONGO);
