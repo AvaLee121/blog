@@ -6,6 +6,7 @@ import "./globals.css";
 import { ThemeProvider }from '../context/ThemeContext'
 const inter = Inter({ subsets: ['latin'] });
 import mongoose from "mongoose";
+import {SessionProvider} from "next-auth/react";
 
 mongoose.set('strictQuery', true);
 
