@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 mongoose.set('strictQuery', true);
 
-/* const connect = async () => {
+const connect = async () => {
   try {
     const connection = await mongoose.connect(process.env.MONGO);
     console.log("Connected to MongoDB");
@@ -11,14 +11,14 @@ mongoose.set('strictQuery', true);
     console.error("MongoDB connection error:", error);
     throw new Error("Connection failed!");
   };
-} */
+}
 
-const connect = async () => {
+/* const connect = async () => {
   try {
     await mongoose.connect(process.env.MONGO);
   } catch (error) {
     throw new Error("Connection failed!");
   }
-};
+};*/
 
 export default connect;
