@@ -6,7 +6,8 @@ import "./globals.css";
 import { ThemeProvider }from '../context/ThemeContext';
 const inter = Inter({ subsets: ['latin'] });
 import AuthProvider from "../components/AuthProvider/AuthProvider";
-
+import mongoose from "mongoose";
+mongoose.set('strictQuery', true);
 
 export const metadata = {
     title: "ZimuLi",
