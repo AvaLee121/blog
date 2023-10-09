@@ -11,7 +11,11 @@ const Login = () => {
     const email = e.target[0].value;
     const password = e.target[1].value;
 
-    signIn("credentials", {email, password})
+    const result = await signIn("credentials", { email, password });
+
+    if (result.error) {
+      console.error("Authentication error:", result.error);
+    }
   };
 
 
