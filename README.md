@@ -1,6 +1,6 @@
-Nest.js - Full Stack Website 
+Nest.js - Full Stack Application
 
-Live view: https://blog-app-lyart-nine.vercel.app/
+Live view: https://full-stack-website-nphyyik0n-avalee121.vercel.app/
 
 Reference Tutorial: https://github.com/safak/nextjs-tutorial
 
