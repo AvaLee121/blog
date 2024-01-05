@@ -2,15 +2,15 @@ import React from 'react';
 import styles from './page.module.css'
 import Button from '../../../components/Button/Button';
 import Image from 'next/image';
-import { NOTFOUND } from 'dns';
-import { items }from './data'
+import { notFound } from 'next/navigation';
+import { items } from './data'
 
 const getData = (cate) =>{
   const data = items[cate];
   if(data){
     return data;
   }
-  return NOTFOUND();
+  return notFound();
 }
 
 const Category = ({params}) => {
