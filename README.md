@@ -1,4 +1,4 @@
-Nest.js - Full Stack Website
+Next.js - Design Services Website
 
 •	Developed a website using Next.js and React, featuring a responsive design with the capability to switch between light and dark modes.
 
