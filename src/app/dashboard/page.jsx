@@ -71,6 +71,7 @@ const Dashboard = () => {
           username: session.data.user.name,
         }),
       });
+      mutate();
     } catch (err) {
       console.log(err);
     }
