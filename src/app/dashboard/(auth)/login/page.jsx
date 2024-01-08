@@ -3,6 +3,7 @@ import React from 'react';
 import styles from './page.module.css';
 import {signIn} from 'next-auth/react';
 
+
 const Login = () => {
 
   const handleSubmit = async (e) =>{
@@ -27,6 +28,10 @@ const Login = () => {
         <button className={styles.button}>Login</button>
       </form>
       <button onClick={() => signIn("google")}>Login with Google</button>
+      <a href="./register">
+        <button>Create a new account</button>
+      </a>
+      
     </div>
   );
 };
