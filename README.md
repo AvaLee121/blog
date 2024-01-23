@@ -1,4 +1,4 @@
-Next.js - Design Services Website
+Next.js - Blog Website
 
 ![image](https://github.com/AvaLee121/Full_Stack_Application/assets/55948841/2a47cbe9-01d1-4da6-97c0-81343d3974e9)
 
